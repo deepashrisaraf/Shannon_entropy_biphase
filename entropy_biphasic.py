@@ -7,7 +7,13 @@ $$ S = - \frac{1}{N} \sum_i^N \sum_j^M \rho_j(i) \log \rho_j(i) $$
  system is then estimated as the average of the entropies over all
  subregions ($N$). 
 
-Following code is a collection functions to calculate the Shannon entropy between a two component system, whose residues are specified as "VT30" and ""P8EL" in GROMACS structure files (.gro). The code requires the .gro files that are the snapshots of the system at regular time-steps where the O atom co-ordinates are extracted.
+Following code is a collection functions to calculate the Shannon entropy
+between a two component system, whose residues are specified as "VT30" and
+""P8EL" in GROMACS structure files (.gro). The code requires the .gro files
+that are the snapshots of the system at regular time-steps where only the O
+atom co-ordinates of the system are extracted.
+
+For details please read: https://doi.org/10.1016/j.molliq.2023.121803
 
 '''
 import numpy as np
